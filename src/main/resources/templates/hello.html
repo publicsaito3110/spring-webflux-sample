@@ -1,0 +1,13 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Hello</title>
+</head>
+<body>
+	<h1>Hello</h1>
+	<ul>
+		<li th:each="val: ${flux}" th:text="${val}"></li>
+	</ul>
+</body>
+</html>
