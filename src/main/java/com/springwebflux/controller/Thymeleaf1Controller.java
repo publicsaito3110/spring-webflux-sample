@@ -10,7 +10,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Controller
-public class ThymeleafController {
+public class Thymeleaf1Controller {
 
 
 	/**
@@ -25,8 +25,8 @@ public class ThymeleafController {
 	 *
 	 * @return Mono
 	 */
-	@RequestMapping("/hello31")
-	public Mono<Rendering> hello31(Model model) {
+	@RequestMapping("/thy11")
+	public Mono<Rendering> thy11(Model model) {
 
 		// Viewに表示する値
 		String[] countArray = {"count: 0", "count: 1", "count: 2", "count: 3", "count: 4"};
@@ -51,8 +51,8 @@ public class ThymeleafController {
 	 *
 	 * @return String
 	 */
-	@RequestMapping("/hello32")
-	public String hello32(Model model) {
+	@RequestMapping("/thy12")
+	public String thy12(Model model) {
 
 		// Fluxを使ったStream
 		Flux<String> flux = Flux
