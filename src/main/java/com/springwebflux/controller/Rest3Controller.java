@@ -24,17 +24,17 @@ public class Rest3Controller {
 	@RequestMapping("/rest21")
 	public Flux<String> rest21() {
 
-		Mono.zip(
-				Flux
-				//
-				.range(0, 5)
-				// [処理1] iを定義し、intで格納 (この時点では型が不整合でエラーになる)
-				.map(i -> "count: " + String.valueOf(i)),
-
-				Flux
-				.range(5, 10)
-				.map(j -> "count: " + String.valueOf(j))
-				)
+//		Mono.zip(
+//				Flux
+//				//
+//				.range(0, 5)
+//				// [処理1] iを定義し、intで格納 (この時点では型が不整合でエラーになる)
+//				.map(i -> "count: " + String.valueOf(i)),
+//
+//				Flux
+//				.range(5, 10)
+//				.map(j -> "count: " + String.valueOf(j))
+//				)
 		.
 
 
